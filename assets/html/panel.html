@@ -1,0 +1,151 @@
+<div class="panel-screen">
+    <h1>Smart House</h1>
+    <div id="logout" class="btn">Logout</div>
+    <div class="centering">
+        <div class="row-data flex-row">
+            <div class="data-house">
+                <div class="flex-row">
+                    <div class="data-item" title="Температура"><span data-id="14">23</span>°C</div>
+                    <div class="data-item" title="Влажность"><span data-id="15">30</span>%</div>
+                </div>
+                <div class="title">HOUSE</div>
+            </div>
+            <div class="data-outdoor">
+                <div class="flex-row">
+                    <div class="data-item" title="Температура"><span data-id="12">23</span>°C</div>
+                    <div class="data-item" title="Влажность"><span data-id="13">30</span>%</div>
+                </div>
+                <div class="title">OUTDOOR</div>
+            </div>
+            <div id="data-exist">
+                <div class="icon" data-id="16"></div>
+                <div class="title">SOMETHING MOVE</div>
+            </div>
+            <div id="data-alarm">
+                <div class="btn" id="fire-off">OFF SIGNAL</div>
+                <div class="icon has-btn" data-id="11"></div>
+                <div class="title">FIRE</div>
+            </div>
+        </div>
+        <div class="row-devices flex-row">
+            <div class="left-panel">
+                <div class="panel panel-light">
+                    <input type="checkbox" id="d6" data-id="6" name="d6"/>
+                    <div class="title row-device">
+                        <h3>LIGHT</h3>
+                        <div class="chb-group chb-ah">
+                            <label for="d6"></label>
+                        </div>
+                    </div>
+                    <div class="panel-data">
+                        <div class="light-device row-device">
+                            <input type="checkbox" id="d1" data-id="1" name="d1"/>
+                            <div class="icon"></div>
+                            <div class="title">Light 1</div>
+                            <div class="chb-group chb-oo">
+                                <label for="d1"></label>
+                            </div>
+                        </div>
+                        <div class="light-device row-device">
+                            <input type="checkbox" id="d2" data-id="2" name="d2"/>
+                            <div class="icon"></div>
+                            <div class="title">Light 2</div>
+                            <div class="chb-group chb-oo">
+                                <label for="d2"></label>
+                            </div>
+                        </div>
+                        <div class="light-device row-device">
+                            <input type="checkbox" id="d3" data-id="3" name="d3"/>
+                            <div class="icon"></div>
+                            <div class="title">Light 3</div>
+                            <div class="chb-group chb-oo">
+                                <label for="d3"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-venting">
+                    <input type="checkbox" id="d9" data-id="9" name="d9"/>
+                    <div class="title row-device">
+                        <h3>VENTING</h3>
+                        <div class="chb-group chb-ah">
+                            <label for="d9"></label>
+                        </div>
+                    </div>
+                    <div class="panel-data">
+                        <div class="vent-device row-device">
+                            <div class="title">
+                                <div class="icon"></div>
+                                Venting
+                            </div>
+                            <div class="chb-group chb-oo">
+                                <input type="checkbox" id="d5" data-id="5" name="d5"/>
+                                <label for="d5"></label>
+                            </div>
+                        </div>
+                        <div class="window-device row-device" title="Окно">
+                            <div class="icon"></div>
+                            <div class="range-group">
+                                <input data-id="4" id="d4" type="range" min="0" max="100" step="1" value="0"/>
+                                <span for="d4">0</span>%
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-panel">
+                <div class="panel panel-door">
+                    <div class="title row-device">
+                        <h3>DOOR</h3>
+                        <div class="chb-group chb-lo">
+                            <input type="checkbox" data-id="7" id="d7" name="d7"/>
+                            <label for="d7"></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-temp">
+                    <div class="title row-device">
+                        <h3>CLIMATE</h3>
+                    </div>
+                    <div class="temp-device row-device" title="Температура">
+                        <div class="icon"></div>
+                        <div class="range-group">
+                            <input data-id="8" id="d8" name="d8" type="range" min="10" max="30" step="1" value="23"/>
+                            <span for="d8">23</span>°C
+                        </div>
+                    </div>
+                    <div class="hum-device row-device" title="Влажность">
+                        <div class="icon"></div>
+                        <div class="range-group">
+                            <input data-id="10" id="d10" name="d10" type="range" min="0" max="100" step="1" value="30"/>
+                            <span for="d10">30</span>%
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-light">
+                    <div class="title row-device">
+                        <h3>POWER SOCKETS</h3>
+                    </div>
+                    <div class="panel-soket">
+                        <div class="soket-device row-device">
+                            <input type="checkbox" id="d17" data-id="17" name="d17"/>
+                            <div class="icon"></div>
+                            <div class="title">Soket 1</div>
+                            <div class="chb-group chb-oo">
+                                <label for="d17"></label>
+                            </div>
+                        </div>
+                        <div class="soket-device row-device">
+                            <input type="checkbox" id="d18" data-id="18" name="d18"/>
+                            <div class="icon"></div>
+                            <div class="title">Soket 2</div>
+                            <div class="chb-group chb-oo">
+                                <label for="d18"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
